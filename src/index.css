@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 
 .luckiest-guy-regular {
   font-family: "Luckiest Guy", cursive;
@@ -6,11 +6,12 @@
   font-style: normal;
 }
 
-
-.mainheaders {
+.main-header {
   font-family: "Luckiest Guy", cursive;
-  font-size: 2rem;
-
   margin: 0;
   padding: 0;
+}
+
+.nav-links{
+  font-weight: 500;
 }

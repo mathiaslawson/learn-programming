@@ -1,7 +1,7 @@
 
 
 function Landing() {
-  return <>This is the landing</>;
+  return <></>;
 }
 
 export default Landing;
