@@ -1,7 +1,6 @@
 import progress from "../../../assets/images/progress.png";
 import ad from "../../../assets/images/adevnture.png";
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+
 
 function Row3() {
   return (
@@ -49,37 +48,7 @@ function Row3() {
         </div>
       </div>
 
-      <div className="mb-5" style={{ marginTop: "12rem" }}>
-        <div
-          className="d-flex justify-content-around"
-          style={{ flexWrap: "wrap" }}
-        >
-          <div className="text-center" style={{ width: "500px" }}>
-            <p
-              className="main-header text-center"
-              style={{ fontSize: "5rem", color: "#423F4C" }}
-            >
-              Video <br /> Voyage ,Dive <br /> Into Learning <br /> Adventures
-            </p>
-
-            <div className="mt-5 d-flex justify-content-center gap-5">
-              <div>
-                <FaArrowLeft
-                  className=""
-                  style={{ fontSize: "3rem", color: "#CFCED1" }}
-                />
-              </div>
-              <div>
-                <FaArrowRight
-                  className=""
-                  style={{ fontSize: "3rem", color: "#CFCED1" }}
-                />
-              </div>
-            </div>
-          </div>
-          <div style={{ width: "500px" }}>d</div>
-        </div>
-      </div>
+   
     </>
   );
 }
