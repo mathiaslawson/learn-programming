@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
+import Chat from "./pages/chat/Chat";
+import Auth from './pages/Auth/auth'
 
 function App() {
   // mock unprotected routes
@@ -17,6 +19,8 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
         {
           <div style={{ display: path === "/auth" ? "none" : "block" }}>

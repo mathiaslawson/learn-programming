@@ -1,4 +1,5 @@
 import { Container } from "reactstrap";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -65,12 +66,25 @@ function Navbar() {
                 ></img>
                 EN
               </p>
-              <p className="nav-links" type="submit">
-                Login
-              </p>
-              <p className="nav-links p-1 px-4" type="submit" style={{border: '2px solid #705AB4', borderRadius: '10px'}}>
-                Sign Up
-              </p>
+              <Link to="/chat">
+                <p className="nav-links" type="submit">
+                  Login
+                </p>
+              </Link>
+              {
+                <Link to="/auth">
+                  <p
+                    className="nav-links p-1 px-4"
+                    type="submit"
+                    style={{
+                      border: "2px solid #705AB4",
+                      borderRadius: "10px",
+                    }}
+                  >
+                    Sign Up
+                  </p>
+                </Link>
+              }
             </div>
           </div>
         </div>
