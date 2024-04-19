@@ -5,10 +5,20 @@ import Footer from "./components/global/Footer";
 import Chat from "./pages/chat/Chat";
 import Auth from "./pages/Auth/auth";
 
+
+import { useEffect, useState } from "react";
+import firestore from "./services/firebase";
+
+import { collection, addDoc, getDocs } from "firebase/firestore";
+
+
 function App() {
   // mock unprotected routes
 
   const path = window.location.pathname;
+
+
+  const [data, setData] = useState("");
 
   return (
     <>
