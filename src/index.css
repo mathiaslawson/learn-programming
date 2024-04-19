@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-
+.input-container {
+  bottom: -130%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
 .luckiest-guy-regular {
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
@@ -24,4 +28,8 @@
 
 .nav-links {
   font-weight: 500;
+}
+input{
+  width: 35rem;
+  max-width: 100%;
 }
