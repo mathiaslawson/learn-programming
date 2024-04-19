@@ -4,9 +4,8 @@ import books from "../../../assets/images/books.png";
 function Row2() {
   return (
     <>
-    
       <div
-        className="d-flex"
+        className="d-flex py-5"
         style={{
           flexWrap: "wrap",
           flexDirection: "row",
@@ -14,7 +13,7 @@ function Row2() {
         }}
       >
         <div
-          style={{ width: "1000px" }}
+          style={{ maxWidth: "1000px" }}
           className="d-flex justify-content-center align-items-center"
         >
           <div>
@@ -63,13 +62,16 @@ function Row2() {
             </div>
           </div>
         </div>
-        <div style={{ flex: 1 }} className="d-flex justify-content-center">
+        <div
+          style={{ flex: 1, flexGrow: 4 }}
+          className="d-flex justify-content-center"
+        >
           <p className="text-light">
             <img
               src={books}
               alt="build"
               width={"530"}
-              style={{}}
+              style={{ minWidth: "300px", minHeight: "300px" }}
               className="img-fluid"
             ></img>
           </p>

@@ -3,7 +3,7 @@ import Landing from "./pages/Landing";
 import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
 import Chat from "./pages/chat/Chat";
-import Auth from './pages/Auth/auth'
+import Auth from "./pages/Auth/auth";
 
 function App() {
   // mock unprotected routes
