@@ -16,7 +16,7 @@ function Row4() {
       <div className="mb-5 py-3" style={{ marginTop: "12rem" }}>
         <div
           className="d-flex justify-content-around align-items-center"
-          style={{ flexWrap: "wrap" }}
+          style={{ flexWrap: "wrap", overflow: "hidden" }}
         >
           <div className="text-center" style={{ flex: "1" }}>
             <p
@@ -51,7 +51,7 @@ function Row4() {
           </div>
 
           <div
-            style={{ width: "800px", cursor: "pointer" }}
+            style={{ width: "860px", cursor: "pointer" }}
             className="text-start mb-5"
           >
             <Swiper
@@ -91,55 +91,56 @@ function Row4() {
           </div>
         </div>
 
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center mx-1">
           <div
             style={{
-              width: "75%",
+              width: "70%",
               backgroundColor: "#A282FD",
               borderRadius: "15px",
             }}
           >
             <div
-              className="d-flex justify-content-center "
-              style={{
-                marginTop: "8rem",
-
-                color: "white",
-              }}
+              className="d-flex justify-content-center position-relative"
+              style={{ marginTop: "8rem", color: "white" }}
             >
               <div className="mt-5 mx-5">
                 <h1
                   className="main-header py-3 px-3 text-center"
                   style={{ fontSize: "4rem" }}
                 >
-                  Infinite learning lab
+                  Infinite learning
+                  <br /> lab
                 </h1>
               </div>
-              <div
-                style={{
-                  position: "relative",
-                  top: "-12rem",
-                  left: "7rem",
-                }}
-              >
+            
+              <div className="d-none d-xl-block">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/e937/5a13/feab8db7b67400a8b94a2009d1bf576c?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WNeJL2R3l699R5Aizhw12wsE1W-WFPLT2WV0UmNeMLMU1UhkX6g3DuX~05tbyrZEL3dTiv5XbEHY2-Sk3tGCUWdVXHo60CKygu9KXM6I4FXiiE04QyEFkU4spJPQ5cIQ9juK5LNqbTaVDx2wmbqNabUb0SOEsnGph9gQ9o2vPVdgPQGT40ggUXKC~y3TWXNkCEER7jePdrrbqDp1HXapny8Tf50mV4LwwJ79nhedUeaDncpC~FNOiy-4b-ZfatBr6IH9SjckUDRthvZD35g~x4hrnAmMXak3mlZgnlxGfTMLaU75DlVpqnHjlq150pll3ZUJz7cNrfS1xaLY5l9RTA__"
-                  width={"700"}
-                ></img>
+                  src="https://utfs.io/f/9c253b1a-a924-4814-9234-c73f38405646-y8a0dg.png"
+                  className="img-fluid"
+                  style={{
+                    padding: "0px",
+                    margin: "0px",
+                    overflow: "hidden",
+                    maxWidth: "500px",
+                    height: "auto",
+                    position: "absolute",
+                    top: '-200px', 
+                    left: '50rem'
+                  }}
+                  alt="Image"
+                />
               </div>
             </div>
-            <div
-              className="text-center text-light mb-5"
-              style={{ marginTop: "-17rem" }}
-            >
+            <div className="text-center text-light mb-5">
               {" "}
               <h1 className="main-header">Imagine, Create, Discover</h1>
               <p className="mt-4 sub-header fs-4 p-4 ">
                 Welcome to the Infinite Learning Lab, where your curiosity leads
-                the way! This special corner of Giggle Learn is your canvas for
+                the way!
+                <br /> This special corner of Giggle Learn is your canvas for
                 endless exploration
               </p>
-              <div>
+              <div className="">
                 <Button
                   style={{
                     backgroundColor: "white",
