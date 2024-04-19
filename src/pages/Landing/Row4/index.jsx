@@ -91,7 +91,7 @@ function Row4() {
           </div>
         </div>
 
-        <div className="d-flex justify-content-center mx-3">
+        <div className="d-flex justify-content-center mx-1">
           <div
             style={{
               width: "70%",
