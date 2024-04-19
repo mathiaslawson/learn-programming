@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Navbar from "./components/global/Navbar";
+import Footer from "./components/global/Footer";
 
 function App() {
   // mock unprotected routes
