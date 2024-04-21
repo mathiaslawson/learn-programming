@@ -141,4 +141,6 @@
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
-
+.input-length{
+  width: 500px;
+}
