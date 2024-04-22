@@ -1,32 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./pages/Landing";
-import Navbar from "./components/global/Navbar";
-import Footer from "./components/global/Footer";
-import Chat from "./pages/chat/Chat";
-import Auth from "./pages/Auth/auth";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import LayoutWrapper from "./layout";
+
+import AllRoutes from "./layout/Rotues";
 
 function App() {
-  // mock unprotected routes
-
-  const path = window.location.pathname;
-
   return (
     <>
       <Router>
-        <div style={{ display: path === "/auth" ? "none" : "block" }}>
-          <Navbar />
-        </div>
-
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/chat" element={<Chat />} />
-          <Route path="/auth" element={<Auth />} />
-        </Routes>
-        {
-          <div style={{ display: path === "/auth" ? "none" : "block" }}>
-            <Footer />
-          </div>
-        }
+        <LayoutWrapper allroutes={AllRoutes} />
       </Router>
     </>
   );
