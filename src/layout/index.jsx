@@ -28,7 +28,11 @@ const NonAuthLayout = ({ children }) => {
 const AuthLayout = ({ children }) => {
   return (
     <>
-      <div>33{children}</div>
+      <div>
+        {" "}
+        <Navbar />
+        {children}
+      </div>
     </>
   );
 };
