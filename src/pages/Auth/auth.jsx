@@ -1,8 +1,28 @@
+import { useEffect } from "react";
 import toy from "../../assets/images/toy.png";
 import { Button } from "reactstrap";
-import { IoRemoveOutline } from "react-icons/io5";
+// import { IoRemoveOutline } from "react-icons/io5";
+import { UserAuth } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 function Auth() {
+  const { googleSignIn, user } = UserAuth();
+  const navigate = useNavigate();
+
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    if (user != null) {
+      navigate("/chat");
+    }
+  }, [user]);
+
   return (
     <div style={{ backgroundColor: "#a282fd" }} className="h-100">
       <div style={{ height: "auto", color: "white" }}>
@@ -26,7 +46,7 @@ function Auth() {
               <br /> skills or continue your journey with giggle{" "}
             </p>
 
-            <div className="mt-5 text-center d-flex justify-content-center gap-2">
+            {/* <div className="mt-5 text-center d-flex justify-content-center gap-2">
               <Button
                 style={{
                   border: "2px solid #A282FD",
@@ -51,9 +71,9 @@ function Auth() {
               >
                 Register Now
               </Button>
-            </div>
+            </div> */}
 
-            <div className="text-center sub-header mt-5 d-flex justify-content-center gap-2">
+            {/* <div className="text-center sub-header mt-5 d-flex justify-content-center gap-2">
               <div>
                 <IoRemoveOutline />
               </div>
@@ -61,10 +81,11 @@ function Auth() {
               <div>
                 <IoRemoveOutline />
               </div>
-            </div>
+            </div> */}
 
             <div className="text-center mt-5">
               <Button
+                onClick={handleGoogleSignIn}
                 style={{
                   border: "2px solid #A282FD",
                   backgroundColor: "white",
@@ -73,6 +94,11 @@ function Auth() {
                   boxShadow: "0px 4px 1px gray ",
                 }}
                 className="px-5 fw-bolder"
+                // onClick={() => {
+                //   firebase.OAuthSignIn().then((user) => {
+                //     console.log(user.email); // The user's email
+                //   });
+                // }}
               >
                 Continue with{" "}
                 <img

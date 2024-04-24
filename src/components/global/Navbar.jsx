@@ -66,19 +66,20 @@ function Navbar() {
                 ></img>
                 EN
               </p>
-              <Link to="/chat">
+              {/* <Link to="/chat">
                 <p className="nav-links" type="submit">
                   Login
                 </p>
-              </Link>
+              </Link> */}
               {
-                <Link to="/auth">
+                <Link to="/auth" style={{ textDecoration: "none" }}>
                   <p
                     className="nav-links p-1 px-4"
                     type="submit"
                     style={{
                       border: "2px solid #705AB4",
                       borderRadius: "10px",
+                      textDecoration: "none",
                     }}
                   >
                     Sign Up

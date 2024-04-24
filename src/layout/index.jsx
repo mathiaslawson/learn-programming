@@ -2,14 +2,14 @@ import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
 import { Routes, Route } from "react-router-dom";
 import PropTypes from "prop-types";
+import Protected from "../components/Protected";
 
 const PromptLayout = ({ children }) => {
   return (
     <>
-      <div>
-        {children}
-        <Footer />
-      </div>
+      <Protected>
+        <div>{children}</div>
+      </Protected>
     </>
   );
 };
@@ -19,7 +19,9 @@ const NonAuthLayout = ({ children }) => {
     <>
       <div>
         <Navbar />
+        {/* <Navbar /> */}
         {children}
+        <Footer />
       </div>
     </>
   );
@@ -30,7 +32,7 @@ const AuthLayout = ({ children }) => {
     <>
       <div>
         {" "}
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </div>
     </>
@@ -50,12 +52,14 @@ function LayoutWrapper({ allroutes }) {
                   path={route.path}
                   element={
                     <>
-                      {route.routeId === 1 ? (
+                      {route.routeId === 3 ? (
                         <AuthLayout>{route.element}</AuthLayout>
                       ) : route.routeId === 2 ? (
                         <PromptLayout>{route.element}</PromptLayout>
-                      ) : (
+                      ) : route.routeId === 1 ? (
                         <NonAuthLayout>{route.element}</NonAuthLayout>
+                      ) : (
+                        <>Not FOund</>
                       )}
                     </>
                   }
