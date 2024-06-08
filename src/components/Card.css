@@ -1,0 +1,29 @@
+.my-card {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 23%;
+    height: 50svh;
+  }
+  
+  .card-img-top {
+    height: 65%;  /* 3/4th of the card height */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    
+  }
+  
+  .overlay-text {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: left;
+    width: 70%;
+    font-weight: bold;
+  }
+  

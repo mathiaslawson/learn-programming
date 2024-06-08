@@ -56,6 +56,8 @@ function LayoutWrapper({ allroutes }) {
                         <AuthLayout>{route.element}</AuthLayout>
                       ) : route.routeId === 2 ? (
                         <PromptLayout>{route.element}</PromptLayout>
+                      ) : route.routeId === 4 ? (
+                        <PromptLayout>{route.element}</PromptLayout>
                       ) : route.routeId === 1 ? (
                         <NonAuthLayout>{route.element}</NonAuthLayout>
                       ) : (

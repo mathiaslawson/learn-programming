@@ -1,11 +1,12 @@
 import { Button } from "reactstrap";
+import Translate from "../../../Hooks/Internalization";
 
 function Row1() {
   return (
     <div className="mt-5" style={{ height: "100svh" }}>
       <div className="text-center main-header " style={{ marginTop: "7rem" }}>
         <h1 style={{ color: "#423F4C" }}>
-          Adventure Academy Explore <br /> Learning with AI Buddies!
+         <Translate key={"welcome_msg"} />
         </h1>
       </div>
       <div className="mt-5 text-center">

@@ -88,12 +88,12 @@ function Auth() {
                 onClick={handleGoogleSignIn}
                 style={{
                   border: "2px solid #A282FD",
-                  backgroundColor: "white",
+                  // backgroundColor: "white",
                   color: "#A282FD",
                   borderRadius: "14px",
                   boxShadow: "0px 4px 1px gray ",
                 }}
-                className="px-5 fw-bolder"
+                className="px-5 fw-bolder buttons-normal-invert btn-light"
                 // onClick={() => {
                 //   firebase.OAuthSignIn().then((user) => {
                 //     console.log(user.email); // The user's email

@@ -1,7 +1,14 @@
 import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <>
       <Container fluid className="px-5">
@@ -17,13 +24,13 @@ function Navbar() {
               </div>
               <div>
                 <h5 className="main-header" style={{ color: "#705AB4" }}>
-                  Giggle Learn
+                  {t("giggle")}
                 </h5>
                 <p
                   className="text-center fw-bolder"
                   style={{ fontSize: "0.6rem" }}
                 >
-                  AI SYSTEM
+                  {t("ai_system")}
                 </p>
               </div>
             </div>
@@ -43,16 +50,16 @@ function Navbar() {
             <div className="navbar-nav me-auto mb-2 mb-lg-0 "></div>
             <div className="d-flex justify-content-around gap-2 justify-content-lg-end gap-4 align-items-center">
               <p className="nav-links" type="submit">
-                Subjects
+                {t("Subjects")}
               </p>
               <p className="nav-links" type="submit">
-                Teams
+                {t("Teams")}
               </p>
               <p className="nav-links" type="submit">
-                Help
+                {t("Help")}
               </p>
               <p className="nav-links" type="submit">
-                Subjects
+                {t("Subjects")}
               </p>
               <p className="nav-links" type="submit">
                 <img
@@ -82,7 +89,7 @@ function Navbar() {
                       textDecoration: "none",
                     }}
                   >
-                    Sign Up
+                    {t("Sign Up")}
                   </p>
                 </Link>
               }
