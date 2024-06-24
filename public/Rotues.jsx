@@ -15,13 +15,8 @@ const ROUTES = [
     element: <Courses />,
     routeId: 4
   },
-  // {
-  //   path: "/courses-page/:language/&",
-  //   element: <CoursePage />,
-  //   routeId: 4
-  // },
   {
-    path: "/courses-page/:language/:section",
+    path: "/courses-page",
     element: <CoursePage />,
     routeId: 4
   },

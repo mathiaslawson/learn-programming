@@ -3,6 +3,7 @@ import Footer from "../components/global/Footer";
 import { Routes, Route } from "react-router-dom";
 import PropTypes from "prop-types";
 import Protected from "../components/Protected";
+import ScrollToTop from "../Hooks/ScrollToTop";
 
 const PromptLayout = ({ children }) => {
   return (
@@ -42,6 +43,7 @@ const AuthLayout = ({ children }) => {
 function LayoutWrapper({ allroutes }) {
   return (
     <>
+    <ScrollToTop />
       <Routes>
         {allroutes?.map((route, index) => {
           return (
