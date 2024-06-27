@@ -82,7 +82,10 @@ function Banner({send_language}) {
                 key={link.name}
                 className="btn btn-outline-light"
                 style={{ color: section === link.set ? "#1e1e1e" : "white", backgroundColor: section === link.set ? "#fc787f" : "#1e1e1e", border: "none", fontSize: "1em", padding: "0.5em 1em", borderRadius: '30px' }}
-                onClick={() => handleSectionChange(link.set)}
+                onClick={() => {
+                  handleSectionChange(link.set)
+                  // window.location.reload()
+                }}
               >
                 {link.name}
               </div>

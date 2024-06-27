@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Intro from './Intro'
-import { languages } from '../../../data/Intro'
+import {Lang, Syn} from '../../../data/index'
 import { useParams } from 'react-router-dom';
 import Banner from '../../../components/Banner';
 import Syntax from './Syntax';
@@ -30,18 +30,39 @@ function Index() {
 
   console.log(encodeURIComponent(paramLanguage), "eyeyeye")
 
-  languages.filter((language) => {
+Lang.filter((language) => {
     encodeURIComponent(language.name) === encodeURIComponent(paramLanguage)
+    console.log(language.name, 'not encoded')
     console.log(encodeURIComponent(language.name), "eyeyey")
-
   })
+
+   const [module, setModule] = useState()
+
+
+
+   console.log(section, 'from above')
+
+
+   useEffect(()=>{
   
+    if(section === "get") {
+      setModule(Lang)
+   } 
+
+   if(section === "syntax") {
+    
+    console.log('happende')
+    setModule(Syn)
+ } 
+ 
+   }, [section])
+
+
   return (
    <>
    {
-    languages.filter((language) => encodeURIComponent(language.name) === encodeURIComponent(paramLanguage)).map((language, index) => (
-   
-  <>
+    module?.filter((language) => encodeURIComponent(language.name) === encodeURIComponent(paramLanguage) || [])?.map((language, index) => (
+     <>
     <Banner send_language={language.name}  />
     {
       section === "get" ? 
@@ -70,7 +91,7 @@ function Index() {
       :<Intro key={index} language={language} 
       />                                                                                                             
    }
-   </>
+     </>
    ))
    }
    </>

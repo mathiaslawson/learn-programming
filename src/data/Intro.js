@@ -1,4 +1,4 @@
-export const languages = [
+const Lang = [
   // C++
     {
       name: "C++",
@@ -54,6 +54,8 @@ export const languages = [
   }`
         }
       ]
+
+      
     }  
 ,
 // Java
@@ -112,6 +114,46 @@ export const languages = [
     },
 
 // C#
+{
+  "name": "C#",
+  "introduction": "C# (pronounced C-sharp) is a modern, general-purpose programming language developed by Microsoft within its .NET initiative in the early 2000s. It combines the power and flexibility of C++ with the simplicity of Visual Basic. C# is designed for building robust applications for Microsoft's .NET framework and is widely used for developing desktop applications, web applications, and games.",
+  "keyFeatures": [
+    {
+      "title": "Simple and Easy to Learn",
+      "description": "C# syntax is similar to that of other C-style languages, making it easy for developers familiar with C, C++, or Java to pick up."
+    },
+    {
+      "title": "Object-Oriented Programming (OOP)",
+      "description": "C# fully supports OOP concepts such as encapsulation, inheritance, polymorphism, and abstraction, enabling developers to create modular and maintainable code."
+    },
+    {
+      "title": "Modern Language Features",
+      "description": "C# incorporates modern language features like generics, lambda expressions, LINQ (Language Integrated Query), async/await for asynchronous programming, and more, enhancing developer productivity."
+    },
+    {
+      "title": "Cross-platform Development",
+      "description": "With .NET Core (now .NET 5+), C# supports cross-platform development, allowing applications to run on Windows, Linux, and macOS."
+    },
+    {
+      "title": "Rich Framework and Libraries",
+      "description": "C# benefits from the extensive .NET framework, offering libraries for tasks such as network communications, database access (ADO.NET, Entity Framework), XML processing, and GUI development (Windows Forms, WPF, Xamarin)."
+    }
+  ],
+  "applications": "C# is widely used for building various types of applications, including desktop GUI applications, web applications (ASP.NET), mobile apps (Xamarin), game development (Unity), backend services, cloud applications, and more. Its versatility and integration with the .NET ecosystem make it a popular choice for enterprise-level development.",
+  "learningAndUsage": "Learning C# is facilitated by its straightforward syntax and comprehensive documentation. It is extensively taught in educational institutions and has a large community of developers. C# developers benefit from powerful integrated development environments (IDEs) like Visual Studio, JetBrains Rider, and frameworks like ASP.NET Core for web development and Unity for game development.",
+  "summary": "In summary, C# stands out as a powerful and versatile language for building a wide range of applications. Whether you're developing for Windows, cross-platform environments, or the web, C# provides the tools and frameworks needed to create efficient, scalable, and maintainable software solutions.",
+  "codeSnippets": [
+    {
+      "title": "Hello World in C#",
+      "code": "using System;\n\nclass HelloWorld\n{\n    static void Main()\n    {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}"
+    },
+    {
+      "title": "Simple Class in C#",
+      "code": "using System;\n\nclass MyClass\n{\n    public MyClass()\n    {\n        Console.WriteLine(\"Constructor called!\");\n    }\n\n    static void Main()\n    {\n        MyClass obj = new MyClass();\n    }\n}"
+    }
+  ]
+}
+,
   
 // Godot Essentials
     {
@@ -414,4 +456,6 @@ const obj = new MyClass();`
       ]
     },
   ];
+
+  export default Lang;
   

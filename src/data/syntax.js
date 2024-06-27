@@ -65,7 +65,7 @@
 //     ];
     
 
-export const languages = [
+const Syn = [
     {
     name: 'C#',
     syntaxDescription: `In the previous chapter, we created a C# file called Program.cs, and we used the following code to print "Hello World" to the screen:`,
@@ -133,4 +133,7 @@ export const languages = [
     ]
   }
 ];
+
+
+export default Syn;
   

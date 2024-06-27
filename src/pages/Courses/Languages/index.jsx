@@ -17,20 +17,20 @@ const Languages = () => {
   const languages = [
     { 
     title: "C++",
-    img: "https://assets.leetcode.com/explore/cards/system-design-for-interviews-and-beyond/img-1676672273.png" , 
+    img: "https://media.istockphoto.com/id/1419479750/vector/abstract-orange-and-red-gradient-geometric-shape-circle-background-modern-futuristic.jpg?s=612x612&w=0&k=20&c=lsgkc_BO1sL7ZmJOxr_LN8_hLQPa5Fh6w_1EXsISZYA=" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
     overlayText: "HTML basic structures and tags",
     },
     
     { 
       title: "C#",
-      img: "https://assets.leetcode.com/explore/cards/cheatsheets/img-1674082113.png" , 
+      img: "https://static.vecteezy.com/system/resources/thumbnails/022/217/276/small/banner-background-colorful-bright-orange-gradation-wave-effect-vector.jpg" , 
       description: "HTML structures web pages with essential elements. Start here to build web content.", 
       overlayText: "Intermediate Concepts in HTML",
     },
 
     {title: "Godot Engine",
-    img: "https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png" , 
+    img: "https://static.vecteezy.com/system/resources/thumbnails/020/544/792/small_2x/gradient-orange-waves-background-fluid-gradient-shapes-composition-vector.jpg" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
     overlayText: "Advanced Concepts in HTML"}
   ,
@@ -40,19 +40,19 @@ const Languages = () => {
 
   const ailanguages = [
     {title: "Python Essentials",
-    img: "https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png" , 
+    img: "https://www.freewebheaders.com/gc-abstract-1600x400/thumbs/thumbs_colorful-polygon-shapes-abstract-geometric-vector-banner_gc-banner-1600x400.png" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in HTML"},
+    overlayText: "Advanced Concepts in Pytihon"},
     {title: "Python Torch",
-    img: "https://assets.leetcode.com/explore/cards/cheatsheets/img-1674082113.png" , 
+    img: "https://www.publicdomainpictures.net/pictures/390000/nahled/abstrakt-banner-hintergrund-rot.jpg" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in HTML"},
+    overlayText: "Advanced Concepts in Pytorch"},
     {title: "Hugging Face Essentials",
-    img: "https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png" , 
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4TLrfLD1sAlMmqY7igJx4YsvOpJ6FxoyrhQ&s" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
     overlayText: "Advanced Concepts in HTML"},
     {title: "Colab Essentials",
-    img: "https://assets.leetcode.com/explore/cards/system-design-for-interviews-and-beyond/img-1676672273.png" , 
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWienfCpRK78PZjounWtT4ZpdGRaSeqpdwCNG_WRVLLFtUf_7iVGGzfUJOU56o6VVQgXo&usqp=CAU" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
     overlayText: "Advanced Concepts in HTML"},
 
@@ -65,13 +65,13 @@ const Languages = () => {
    
     { 
       title: "Rust",
-      img: "https://assets.leetcode.com/explore/cards/cheatsheets/img-1674082113.png" , 
+      img: "https://www.publicdomainpictures.net/pictures/390000/nahled/abstrakt-banner-hintergrund-rot.jpg" , 
       description: "HTML structures web pages with essential elements. Start here to build web content.", 
       overlayText: "Intermediate Concepts in HTML",
     },
     { 
       title: "GoLang",
-      img: "https://assets.leetcode.com/explore/cards/system-design-for-interviews-and-beyond/img-1676672273.png" , 
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWienfCpRK78PZjounWtT4ZpdGRaSeqpdwCNG_WRVLLFtUf_7iVGGzfUJOU56o6VVQgXo&usqp=CAU" , 
       description: "HTML structures web pages with essential elements. Start here to build web content.", 
       overlayText: "HTML basic structures and tags",
       },
@@ -79,15 +79,15 @@ const Languages = () => {
 
     {
       title: "JavaScript",
-    img: "https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png" , 
+    img: "https://as2.ftcdn.net/v2/jpg/03/29/47/95/1000_F_329479537_ZYwx3KzKAHdMxzy7XwBgHpEbP3X7UnHt.jpg" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
     overlayText: "Advanced Concepts in HTML"
   }, 
   {
     title: "Java",
-  img: "https://assets.leetcode.com/explore/cards/cheatsheets/img-1674082113.png" , 
+  img: "https://t3.ftcdn.net/jpg/05/23/16/50/360_F_523165015_dveIG8642m9Ue79gPgm01Lrc4hiukHQ5.jpg" , 
   description: "HTML structures web pages with essential elements. Start here to build web content.", 
-  overlayText: "Advanced Concepts in HTML"
+  overlayText: "Advanced Concepts in Java"
 }
   ,
     
@@ -98,27 +98,27 @@ const Languages = () => {
    
     {
       title: "HTML",
-    img: "https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png" , 
+    img: "https://t3.ftcdn.net/jpg/04/02/06/34/360_F_402063409_bDFMmQ38hh69DVScVYdlbzMxL0id3mWU.jpg" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
     overlayText: "Advanced Concepts in HTML"
   }, 
   {
     title: "CSS",
-  img: "https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png" , 
+  img: "https://as2.ftcdn.net/v2/jpg/03/29/47/95/1000_F_329479537_ZYwx3KzKAHdMxzy7XwBgHpEbP3X7UnHt.jpg" , 
   description: "HTML structures web pages with essential elements. Start here to build web content.", 
-  overlayText: "Advanced Concepts in HTML"
+  overlayText: "Advanced Concepts in CSS"
 }, 
     {
       title: "JavaScript",
-    img: "https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png" , 
+    img: "https://as2.ftcdn.net/v2/jpg/05/25/23/67/1000_F_525236770_TGLxvQPcXP1CeuPKYHHzBMrfSfLBFRiC.jpg" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in HTML"
+    overlayText: "Advanced Concepts in JS"
   }, 
   {
     title: "TypeScript",
-  img: "https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png" , 
+  img: "https://as1.ftcdn.net/v2/jpg/03/02/82/72/1000_F_302827252_65eDX6NrRofbFgIraWjq4bq4r4Y8HMeE.jpg" , 
   description: "HTML structures web pages with essential elements. Start here to build web content.", 
-  overlayText: "Advanced Concepts in HTML"
+  overlayText: "Advanced Concepts in TS"
   }
   ,
     
@@ -129,13 +129,13 @@ const Languages = () => {
   const mobilelangs = [
     {
       title: "React Native",
-    img: "https://assets.leetcode.com/explore/cards/system-design-for-interviews-and-beyond/img-1676672273.png" , 
+    img: "https://img.freepik.com/premium-vector/modern-blue-abstract-background-banner-modern-light-blue-abstract-banner-design-background_181182-28913.jpg" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
     overlayText: "Advanced Concepts in HTML"
   }, 
   {
     title: "Swift",
-  img: "https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png" , 
+  img: "https://t3.ftcdn.net/jpg/05/23/16/50/360_F_523165015_dveIG8642m9Ue79gPgm01Lrc4hiukHQ5.jpg" , 
   description: "HTML structures web pages with essential elements. Start here to build web content.", 
   overlayText: "Advanced Concepts in HTML"
    }, 
