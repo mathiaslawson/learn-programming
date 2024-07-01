@@ -162,11 +162,11 @@ const Languages = () => {
       language: frontendlangs,
     },
    
-    {
-      name: "Mobile Application Development",
-      img: "",
-      language: mobilelangs,
-    },
+    // {
+    //   name: "Mobile Application Development",
+    //   img: "",
+    //   language: mobilelangs,
+    // },
    
    
   ];

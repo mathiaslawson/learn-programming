@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import Intro from './Intro'
-import {Lang, Syn} from '../../../data/index'
+import React, { useEffect, useState } from 'react';
+import { Lang, Syn } from '../../../data/index';
 import { useParams } from 'react-router-dom';
 import Banner from '../../../components/Banner';
+import Intro from './Intro';
 import Syntax from './Syntax';
 import WhileLoop from './WhileLoop';
 import Variables from './Variables';
@@ -23,79 +23,63 @@ import Comments from './Comments';
 import BreakContinue from './BreakContinue';
 import Booleans from './Booleans';
 import Arrays from './Arrays';
+import Out from '../../../data/output';
 
 function Index() {
-
   const { language: paramLanguage, section } = useParams();
+  const [module, setModule] = useState([]);
 
-  console.log(encodeURIComponent(paramLanguage), "eyeyeye")
-
-Lang.filter((language) => {
-    encodeURIComponent(language.name) === encodeURIComponent(paramLanguage)
-    console.log(language.name, 'not encoded')
-    console.log(encodeURIComponent(language.name), "eyeyey")
-  })
-
-   const [module, setModule] = useState()
-
-
-
-   console.log(section, 'from above')
-
-
-   useEffect(()=>{
-  
-    if(section === "get") {
-      setModule(Lang)
-   } 
-
-   if(section === "syntax") {
-    
-    console.log('happende')
-    setModule(Syn)
- } 
- 
-   }, [section])
-
+  useEffect(() => {
+    if (section === "get") {
+      setModule(Lang);
+    } else if (section === "syntax") {
+      setModule(Syn);
+    } else if (section === "output") {
+      setModule(Out); 
+    }
+  }, [section]);
 
   return (
-   <>
-   {
-    module?.filter((language) => encodeURIComponent(language.name) === encodeURIComponent(paramLanguage) || [])?.map((language, index) => (
-     <>
-    <Banner send_language={language.name}  />
-    {
-      section === "get" ? 
-      <Intro  key={index} language={language} /> 
-      :section === "syntax" ? <Syntax key={index} language={language} /> 
-      :section === "arrays" ? <Arrays key={index} language={language} /> 
-      :section === "booleans" ? <Booleans key={index} language={language} /> 
-      :section === "breakcontinue" ? <BreakContinue key={index} language={language} /> 
-      :section === "comments" ? <Comments key={index} language={language} /> 
-      :section === "conditions" ? <Conditions key={index} language={language} /> 
-      :section === "data-types" ? <DataTypes key={index} language={language} /> 
-      :section === "enumns" ? <Enums key={index} language={language} /> 
-      :section === "forloop" ? <ForLoop key={index} language={language} /> 
-      :section === "functionparameters" ? <FunctionParameters key={index} language={language} /> 
-      :section === "functions" ? <Functions key={index} language={language} /> 
-      :section === "intro" ? <Intro key={index} language={language} /> 
-      :section === "math" ? <Math key={index} language={language} /> 
-      :section === "operators" ? <Operators key={index} language={language} /> 
-      :section === "output" ? <Output key={index} language={language} /> 
-      :section === "recursion" ? <Recursion key={index} language={language} /> 
-      :section === "strings" ? <Strings key={index} language={language} /> 
-      :section === "switch" ? <Switch key={index} language={language} /> 
-      :section === "user-input" ? <UserInput key={index} language={language} /> 
-      :section === "variables" ? <Variables key={index} language={language} /> 
-      :section === "whileloop" ? <WhileLoop key={index} language={language} /> 
-      :<Intro key={index} language={language} 
-      />                                                                                                             
-   }
-     </>
-   ))
-   }
-   </>
-  )
+    <>
+      {module
+        .filter(language => encodeURIComponent(language.name) === encodeURIComponent(paramLanguage))
+        .map((language, index) => (
+          <React.Fragment key={index}>
+            <Banner send_language={language.name} />
+            {renderComponent(section, language)}
+          </React.Fragment>
+        ))}
+    </>
+  );
 }
 
-export default Index
+function renderComponent(section, language) {
+  const components = {
+    get: <Intro language={language} />,
+    syntax: <Syntax language={language} />,
+    arrays: <Arrays language={language} />,
+    booleans: <Booleans language={language} />,
+    breakcontinue: <BreakContinue language={language} />,
+    comments: <Comments language={language} />,
+    conditions: <Conditions language={language} />,
+    'data-types': <DataTypes language={language} />,
+    enums: <Enums language={language} />,
+    forloop: <ForLoop language={language} />,
+    functionparameters: <FunctionParameters language={language} />,
+    functions: <Functions language={language} />,
+    intro: <Intro language={language} />,
+    math: <Math language={language} />,
+    operators: <Operators language={language} />,
+    output: <Output language={language} />,
+    recursion: <Recursion language={language} />,
+    strings: <Strings language={language} />,
+    switch: <Switch language={language} />,
+    'user-input': <UserInput language={language} />,
+    variables: <Variables language={language} />,
+    whileloop: <WhileLoop language={language} />,
+  };
+
+  return components[section] || <Intro language={language} />;
+}
+
+export default Index;
