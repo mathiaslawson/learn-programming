@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "clipboard": "^2.0.11",
+    "contentful": "^10.12.7",
     "firebase": "^10.11.0",
     "framer-motion": "^11.1.5",
     "i18next": "^23.11.2",

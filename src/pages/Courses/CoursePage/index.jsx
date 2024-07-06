@@ -24,20 +24,42 @@ import BreakContinue from './BreakContinue';
 import Booleans from './Booleans';
 import Arrays from './Arrays';
 import Out from '../../../data/output';
+import { createClient } from 'contentful';
+import { fetchEntry } from '../../../data/ContentfullData';
 
 function Index() {
   const { language: paramLanguage, section } = useParams();
   const [module, setModule] = useState([]);
 
+
+
+
+  const [data,setData] = useState([])
+
+
   useEffect(() => {
-    if (section === "get") {
-      setModule(Lang);
-    } else if (section === "syntax") {
-      setModule(Syn);
-    } else if (section === "output") {
-      setModule(Out); 
+
+    const fetchData = async (id) => {
+       const data = await fetchEntry(`${id === 'get' ? '2qen7rTXJuUV6QCTK5qgAu' : id === "syntax" ?  '7FpDCIfAysW7CzJtb2JKap' : id === "output" ? "2LIDIGI27Dn2jzk8A6y9Bt" : id === 'comments' ? "2qen7rTXJuUV6QCTK5qgAu" : id === 'variables' ? "2qen7rTXJuUV6QCTK5qgAu" : ""}`);
+      setData(data)
+      setModule(data);
     }
-  }, [section]);
+
+
+    if (section === "get") {
+      fetchData("get");    
+    } else if (section === "syntax") {
+      fetchData("syntax");
+    } else if (section === "output") {
+      fetchData("output");
+    }else if (section === "comments") {
+      fetchData("comments"); 
+    } else if (section === "variables") {
+      fetchData("variables"); 
+    }
+
+
+  }, [section, data]);
 
   return (
     <>
@@ -54,6 +76,10 @@ function Index() {
 }
 
 function renderComponent(section, language) {
+
+ 
+
+
   const components = {
     get: <Intro language={language} />,
     syntax: <Syntax language={language} />,

@@ -1,4 +1,5 @@
-const Lang = [
+const Lang = 
+[
   // C++
     {
       name: "C++",

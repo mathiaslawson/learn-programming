@@ -7,9 +7,6 @@ function Banner({send_language}) {
 
   const { language, section  } = useParams();
 
-  console.log(section)
-
-
   const navigate = useNavigate();
 
   const handleGoBack = () => {
