@@ -40,7 +40,7 @@ function Index() {
   useEffect(() => {
 
     const fetchData = async (id) => {
-       const data = await fetchEntry(`${id === 'get' ? '2qen7rTXJuUV6QCTK5qgAu' : id === "syntax" ?  '7FpDCIfAysW7CzJtb2JKap' : id === "output" ? "2LIDIGI27Dn2jzk8A6y9Bt" : id === 'comments' ? "2qen7rTXJuUV6QCTK5qgAu" : id === 'variables' ? "2qen7rTXJuUV6QCTK5qgAu" : ""}`);
+       const data = await fetchEntry(`${id === 'get' ? '2qen7rTXJuUV6QCTK5qgAu' : id === "syntax" ?  '7FpDCIfAysW7CzJtb2JKap' : id === "output" ? "2LIDIGI27Dn2jzk8A6y9Bt" : id === 'comments' ? "5ZRs5jrRpc97a6esOCG2t3" : id === 'variables' ? "2qen7rTXJuUV6QCTK5qgAu" : ""}`);
       setData(data)
       setModule(data);
     }
