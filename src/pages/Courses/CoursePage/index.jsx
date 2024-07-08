@@ -35,34 +35,45 @@ function Index() {
 
 
   const [data,setData] = useState([])
+  const [loading, setLoading] = useState(false);
 
 
+  
   useEffect(() => {
-
     const fetchData = async (id) => {
-       const data = await fetchEntry(`${id === 'get' ? '2qen7rTXJuUV6QCTK5qgAu' : id === "syntax" ?  '7FpDCIfAysW7CzJtb2JKap' : id === "output" ? "2LIDIGI27Dn2jzk8A6y9Bt" : id === 'comments' ? "5ZRs5jrRpc97a6esOCG2t3" : id === 'variables' ? "2qen7rTXJuUV6QCTK5qgAu" : ""}`);
-      setData(data)
-      setModule(data);
+      setLoading(true);
+      console.log(id, 'this')
+      try {
+        const data = await fetchEntry(
+          `${id === 'get' ? '2qen7rTXJuUV6QCTK5qgAu' : 
+            id === 'syntax' ? '7FpDCIfAysW7CzJtb2JKap' : 
+            id === 'output' ? '2LIDIGI27Dn2jzk8A6y9Bt' : 
+            id === 'comments' ? '5ZRs5jrRpc97a6esOCG2t3' : 
+            id === 'variables' ? '2qen7rTXJuUV6QCTK5qgAu' : ''}`
+        );
+        setData(data);
+        setModule(data);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+  
+    if (section) {
+      fetchData(section);
     }
+  }, [section]);
+  
 
 
-    if (section === "get") {
-      fetchData("get");    
-    } else if (section === "syntax") {
-      fetchData("syntax");
-    } else if (section === "output") {
-      fetchData("output");
-    }else if (section === "comments") {
-      fetchData("comments"); 
-    } else if (section === "variables") {
-      fetchData("variables"); 
-    }
-
-
-  }, [section, data]);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
+
       {module
         .filter(language => encodeURIComponent(language.name) === encodeURIComponent(paramLanguage))
         .map((language, index) => (

@@ -2,7 +2,7 @@ import { createClient } from 'contentful';
 
 const client = createClient({
     space: 'h9xoga78agw3',
-    environment: 'master', // defaults to 'master' if not set
+    environment: 'master', 
     accessToken: 'QJ2o85JNWFLfPz5TtHZArXz9epU2t8ngi7Ijq4zE9bc'
 });
 

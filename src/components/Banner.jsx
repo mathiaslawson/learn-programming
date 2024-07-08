@@ -15,15 +15,15 @@ function Banner({send_language}) {
 
 
   const handleSectionChange = (newSection) => {
-    // Get the current URL
+   
     const currentUrl = window.location.pathname;
-    // Split the URL to extract the parameters
+   
     const urlParts = currentUrl.split('/');
-    // Update the last parameter (section)
+  
     urlParts[urlParts.length - 1] = newSection;
-    // Join the parts back together to form the new URL
+   
     const newUrl = urlParts.join('/');
-    // Navigate to the new URL
+   
     navigate(newUrl);
   };
 

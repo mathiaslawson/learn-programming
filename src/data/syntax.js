@@ -64,8 +64,6 @@
     
 //     ];
 
-import {createClient} from 'contentful'
-    
 
 const Syn = [
   // 
