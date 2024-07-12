@@ -5,7 +5,7 @@ function Footer() {
     <>
       <div
         className=""
-        style={{ backgroundColor: "#0a141d", color: "white", flexWrap: "wrap" }}        
+        style={{ backgroundColor: "#0a141d", color: "white", flexWrap: "wrap" , marginTop: '20px'}}        
       >
 
         <div style={{ width: "" }} className='text-center'>

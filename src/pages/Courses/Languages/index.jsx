@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { UserAuth } from "../../../context/AuthContext";
 import MyCard from "../../../components/Card";
 import { Link } from "react-router-dom";
+import './Lang.css'
 
 const Languages = () => {
   const { logOut, user } = UserAuth();
@@ -29,21 +30,21 @@ const Languages = () => {
       overlayText: "Intermediate Concepts in HTML",
     },
 
-    {title: "Godot  (GD Script)",
-    img: "https://static.vecteezy.com/system/resources/thumbnails/020/544/792/small_2x/gradient-orange-waves-background-fluid-gradient-shapes-composition-vector.jpg" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in HTML"}
-  ,
+  //   {title: "Godot  (GD Script)",
+  //   img: "https://static.vecteezy.com/system/resources/thumbnails/020/544/792/small_2x/gradient-orange-waves-background-fluid-gradient-shapes-composition-vector.jpg" , 
+  //   description: "HTML structures web pages with essential elements. Start here to build web content.", 
+  //   overlayText: "Advanced Concepts in HTML"}
+  // ,
     
    
   ];
 
-  const ailanguages = [
-    {title: "Python",
-    img: "https://www.freewebheaders.com/gc-abstract-1600x400/thumbs/thumbs_colorful-polygon-shapes-abstract-geometric-vector-banner_gc-banner-1600x400.png" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in Pytihon"},
-  ];
+  // const ailanguages = [
+  //   {title: "Python",
+  //   img: "https://www.freewebheaders.com/gc-abstract-1600x400/thumbs/thumbs_colorful-polygon-shapes-abstract-geometric-vector-banner_gc-banner-1600x400.png" , 
+  //   description: "HTML structures web pages with essential elements. Start here to build web content.", 
+  //   overlayText: "Advanced Concepts in Pytihon"},
+  // ];
 
   const backendlangs = [
    
@@ -53,12 +54,12 @@ const Languages = () => {
       description: "HTML structures web pages with essential elements. Start here to build web content.", 
       overlayText: "Intermediate Concepts in HTML",
     },
-    { 
-      title: "GoLang",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWienfCpRK78PZjounWtT4ZpdGRaSeqpdwCNG_WRVLLFtUf_7iVGGzfUJOU56o6VVQgXo&usqp=CAU" , 
-      description: "HTML structures web pages with essential elements. Start here to build web content.", 
-      overlayText: "HTML basic structures and tags",
-      },
+    // { 
+    //   title: "GoLang",
+    //   img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWienfCpRK78PZjounWtT4ZpdGRaSeqpdwCNG_WRVLLFtUf_7iVGGzfUJOU56o6VVQgXo&usqp=CAU" , 
+    //   description: "HTML structures web pages with essential elements. Start here to build web content.", 
+    //   overlayText: "HTML basic structures and tags",
+    //   },
       
 
     {
@@ -80,6 +81,19 @@ description: "HTML structures web pages with essential elements. Start here to b
 overlayText: "Advanced Concepts in TS"
 }
   ,
+  { 
+    title: "C++",
+    img: "https://media.istockphoto.com/id/1419479750/vector/abstract-orange-and-red-gradient-geometric-shape-circle-background-modern-futuristic.jpg?s=612x612&w=0&k=20&c=lsgkc_BO1sL7ZmJOxr_LN8_hLQPa5Fh6w_1EXsISZYA=" , 
+    description: "HTML structures web pages with essential elements. Start here to build web content.", 
+    overlayText: "HTML basic structures and tags",
+    },
+    
+    { 
+      title: "C#",
+      img: "https://static.vecteezy.com/system/resources/thumbnails/022/217/276/small/banner-background-colorful-bright-orange-gradation-wave-effect-vector.jpg" , 
+      description: "HTML structures web pages with essential elements. Start here to build web content.", 
+      overlayText: "Intermediate Concepts in HTML",
+    },
     
    
   ];
@@ -123,22 +137,25 @@ overlayText: "Advanced Concepts in TS"
       name: "Backend Engineering",
       img: "",
       language: backendlangs,
+      des: "   Whether designing a sleek, user-friendly interface or building robust, scalable back-end systems, web development is essential for bringing the digital experience to life."
     },
     {
       name: "Game Development",
       img: "",
       language: languages,
+      des: "Whether you’re crafting an immersive, user-friendly game interface or developing robust, scalable systems for seamless gameplay, game development is the cornerstone of bringing interactive digital worlds to life."
     },
     {
       name: "Frontend Engineering",
       img: "",
       language: frontendlangs,
+      des: "Crafting user-friendly web interfaces that look great and work flawlessly"
     },
-    {
-      name: "AI & Maching Learning",
-      img: "",
-      language: ailanguages,
-    },
+    // {
+    //   name: "AI & Maching Learning",
+    //   img: "",
+    //   language: ailanguages,
+    // },
    
   
    
@@ -177,7 +194,7 @@ overlayText: "Advanced Concepts in TS"
         </h1>
       </div>
 
-      <div className="d-flex justify-content-start mt-5 gap-3 p-4 flex-wrap">
+      <div className="">
         {section.map((a, key) => {
           return (
             <>
@@ -190,25 +207,23 @@ overlayText: "Advanced Concepts in TS"
                   >
                     {a.name}{" "}
                   </h4>
-                  <p className="text-muted" style={{letterSpacing: '0.2px', lineHeight: '28px', color: 'white'}}>
-                Whether designing a sleek, user-friendly interface or building robust, scalable back-end systems, web development is essential for bringing the digital experience to life.
+                  <p className="text-muted" style={{letterSpacing: '0.2px', lineHeight: '28px', color: 'white'}}> 
+                  {a.des}
                   </p>
                 </div>
              
-              
-                <div className="d-flex justify-content-start mt-5 gap-3 p-4 flex-wrap">
-                  {a.language.map((a, key) => {
-                    return (
-                      <MyCard
-                        key={key.id}
-                        image={a.img}
-                        title={a.title}
-                        description={a.description}
-                        overlayText={a.overlayText}
-                       />
-                    );
-                  })}
-                </div>
+                <div className="grid-container">
+      {a.language.map((item, index) => (
+        <div className="grid-item" key={item.id || index}>
+          <MyCard
+            image={item.img}
+            title={item.title}
+            description={item.description}
+            overlayText={item.overlayText}
+          />
+        </div>
+      ))}
+    </div>
                 
               </div>
             </>

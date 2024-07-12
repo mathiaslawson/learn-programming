@@ -1,0 +1,49 @@
+/* MyGridComponent.css */
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between the grid items */
+    justify-content: center; /* Center the grid items horizontally */
+  }
+  
+  .grid-item {
+    flex: 1 1 calc(33.333% - 32px); /* 3 items per row with a gap */
+    max-width: calc(33.333% - 32px); /* Ensure items don’t exceed 3 per row */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 1200px) {
+    .grid-item {
+      flex: 1 1 calc(33.333% - 32px); /* 3 items per row for large screens */
+      max-width: calc(33.333% - 32px); /* Ensure items fit correctly */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .grid-item {
+      flex: 1 1 calc(50% - 32px); /* 2 items per row for medium screens */
+      max-width: calc(50% - 32px); /* Ensure items fit correctly */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-item {
+      flex: 1 1 calc(50% - 32px); /* 2 items per row for smaller screens */
+      max-width: calc(50% - 32px); /* Ensure items fit correctly */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .grid-item {
+      flex: 1 1 calc(100% - 32px); /* 1 item per row for extra small screens */
+      max-width: calc(100% - 32px); /* Ensure items fit correctly */
+    }
+  }
+  
+  /* Optional: Ensuring cards take full available width */
+  .grid-item .card {
+    width: 100%; /* Make sure the card itself takes the full width of the grid item */
+  }
+  
