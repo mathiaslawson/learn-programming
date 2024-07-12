@@ -46,7 +46,7 @@ function Banner({send_language}) {
 
   return (
    <>
-     <div style={{ color: "white" , backgroundColor: '#252b32', height: '40svh'}} className="p-4">
+     <div style={{ color: "white" , backgroundColor: '#0a141d', height: '40svh'}} className="p-4">
         
         <div className='container'>
         <div style={{cursor: "pointer"}} onClick={handleGoBack}>

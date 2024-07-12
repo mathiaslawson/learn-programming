@@ -11,6 +11,12 @@ function App() {
     i18n.changeLanguage(language);
   };
 
+  document.body.style.backgroundColor = "#f0f0f0"; 
+
+
+  
+
+
   return (
     <>
       <Router>

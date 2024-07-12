@@ -29,7 +29,7 @@ const Languages = () => {
       overlayText: "Intermediate Concepts in HTML",
     },
 
-    {title: "Godot Engine",
+    {title: "Godot  (GD Script)",
     img: "https://static.vecteezy.com/system/resources/thumbnails/020/544/792/small_2x/gradient-orange-waves-background-fluid-gradient-shapes-composition-vector.jpg" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
     overlayText: "Advanced Concepts in HTML"}
@@ -39,26 +39,10 @@ const Languages = () => {
   ];
 
   const ailanguages = [
-    {title: "Python Essentials",
+    {title: "Python",
     img: "https://www.freewebheaders.com/gc-abstract-1600x400/thumbs/thumbs_colorful-polygon-shapes-abstract-geometric-vector-banner_gc-banner-1600x400.png" , 
     description: "HTML structures web pages with essential elements. Start here to build web content.", 
     overlayText: "Advanced Concepts in Pytihon"},
-    {title: "Python Torch",
-    img: "https://www.publicdomainpictures.net/pictures/390000/nahled/abstrakt-banner-hintergrund-rot.jpg" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in Pytorch"},
-    {title: "Hugging Face Essentials",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4TLrfLD1sAlMmqY7igJx4YsvOpJ6FxoyrhQ&s" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in HTML"},
-    {title: "Colab Essentials",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWienfCpRK78PZjounWtT4ZpdGRaSeqpdwCNG_WRVLLFtUf_7iVGGzfUJOU56o6VVQgXo&usqp=CAU" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in HTML"},
-
-
-
-   
   ];
 
   const backendlangs = [
@@ -88,6 +72,12 @@ const Languages = () => {
   img: "https://t3.ftcdn.net/jpg/05/23/16/50/360_F_523165015_dveIG8642m9Ue79gPgm01Lrc4hiukHQ5.jpg" , 
   description: "HTML structures web pages with essential elements. Start here to build web content.", 
   overlayText: "Advanced Concepts in Java"
+},
+{
+  title: "TypeScript",
+img: "https://as1.ftcdn.net/v2/jpg/03/02/82/72/1000_F_302827252_65eDX6NrRofbFgIraWjq4bq4r4Y8HMeE.jpg" , 
+description: "HTML structures web pages with essential elements. Start here to build web content.", 
+overlayText: "Advanced Concepts in TS"
 }
   ,
     
@@ -95,19 +85,7 @@ const Languages = () => {
   ];
 
   const frontendlangs = [
-   
-    {
-      title: "HTML",
-    img: "https://t3.ftcdn.net/jpg/04/02/06/34/360_F_402063409_bDFMmQ38hh69DVScVYdlbzMxL0id3mWU.jpg" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in HTML"
-  }, 
-  {
-    title: "CSS",
-  img: "https://as2.ftcdn.net/v2/jpg/03/29/47/95/1000_F_329479537_ZYwx3KzKAHdMxzy7XwBgHpEbP3X7UnHt.jpg" , 
-  description: "HTML structures web pages with essential elements. Start here to build web content.", 
-  overlayText: "Advanced Concepts in CSS"
-}, 
+  
     {
       title: "JavaScript",
     img: "https://as2.ftcdn.net/v2/jpg/05/25/23/67/1000_F_525236770_TGLxvQPcXP1CeuPKYHHzBMrfSfLBFRiC.jpg" , 
@@ -142,30 +120,32 @@ const Languages = () => {
   ];
   const section = [
     {
-      name: "Game Development",
-      img: "",
-      language: languages,
-    },
-    {
-      name: "AI & Maching Learning",
-      img: "",
-      language: ailanguages,
-    },
-    {
       name: "Backend Engineering",
       img: "",
       language: backendlangs,
+    },
+    {
+      name: "Game Development",
+      img: "",
+      language: languages,
     },
     {
       name: "Frontend Engineering",
       img: "",
       language: frontendlangs,
     },
+    {
+      name: "AI & Maching Learning",
+      img: "",
+      language: ailanguages,
+    },
+   
+  
    
     // {
     //   name: "Mobile Application Development",
     //   img: "",
-    //   language: mobilelangs,
+    //   language: frontendlangs,
     // },
    
    
@@ -176,7 +156,7 @@ const Languages = () => {
       {/* <button onClick={handleSignOut} className="border py-2 px-5 mt-10">
         Logout
       </button> */}
-      <div style={{ color: "white" , backgroundColor: '#252b32', height: '40svh'}} className="p-4">
+      <div style={{ color: "white" , backgroundColor: '#0a141d', height: '40svh'}} className="p-4">
         <h1
           className="luckiest-guy-regular mt-5"
           style={{
@@ -206,11 +186,11 @@ const Languages = () => {
                   
                 <h4
                     className="fw-bolder text-muted mt-5"
-                    style={{ color: "red" }}
+                    style={{ color: "white" }}
                   >
                     {a.name}{" "}
                   </h4>
-                  <p className="text-muted" style={{letterSpacing: '0.2px', lineHeight: '28px'}}>
+                  <p className="text-muted" style={{letterSpacing: '0.2px', lineHeight: '28px', color: 'white'}}>
                 Whether designing a sleek, user-friendly interface or building robust, scalable back-end systems, web development is essential for bringing the digital experience to life.
                   </p>
                 </div>
@@ -223,9 +203,9 @@ const Languages = () => {
                         key={key.id}
                         image={a.img}
                         title={a.title}
-          description={a.description}
-          overlayText={a.overlayText}
-        />
+                        description={a.description}
+                        overlayText={a.overlayText}
+                       />
                     );
                   })}
                 </div>

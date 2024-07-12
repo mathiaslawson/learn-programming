@@ -67,7 +67,7 @@ const Chat = () => {
           >
             <div
               style={{
-                background: "#A282FDB8",
+                background: "#0a141d",
                 boxShadow: "0px 4px 4px 0px #00000040",
                 color: "white",
                 borderRadius: "40px",

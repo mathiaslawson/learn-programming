@@ -26,6 +26,7 @@ import Arrays from './Arrays';
 import Out from '../../../data/output';
 import { createClient } from 'contentful';
 import { fetchEntry } from '../../../data/ContentfullData';
+import loader from '../../../assets/loaders/bolt.gif'
 
 function Index() {
   const { language: paramLanguage, section } = useParams();
@@ -45,11 +46,11 @@ function Index() {
       console.log(id, 'this')
       try {
         const data = await fetchEntry(
-          `${id === 'get' ? '2qen7rTXJuUV6QCTK5qgAu' : 
-            id === 'syntax' ? '7FpDCIfAysW7CzJtb2JKap' : 
-            id === 'output' ? '2LIDIGI27Dn2jzk8A6y9Bt' : 
-            id === 'comments' ? '5ZRs5jrRpc97a6esOCG2t3' : 
-            id === 'variables' ? '2qen7rTXJuUV6QCTK5qgAu' : ''}`
+          `${id === 'get' ? import.meta.env.VITE_GET : 
+            id === 'syntax' ? import.meta.env.VITE_SYN : 
+            id === 'output' ? import.meta.env.VITE_OUT : 
+            id === 'comments' ? import.meta.env.VITE_COMMENTS : 
+            id === 'variables' ? import.meta.env.VITE_GET : ''}`
         );
         setData(data);
         setModule(data);
@@ -68,7 +69,17 @@ function Index() {
 
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>
+       <div style={{ 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        height: '100vh',
+        backgroundColor: '#0a141d'
+      }}>
+        <img src={loader} alt="loader" />
+      </div>
+    </div>;
   }
 
   return (

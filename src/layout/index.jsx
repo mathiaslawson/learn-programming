@@ -9,7 +9,11 @@ const PromptLayout = ({ children }) => {
   return (
     <>
       <Protected>
-        <div>{children}</div>
+        <div>
+        <Navbar />
+          {children}
+          <Footer />
+          </div>
       </Protected>
     </>
   );
@@ -35,10 +39,12 @@ const AuthLayout = ({ children }) => {
         {" "}
         {/* <Navbar /> */}
         {children}
+         <Footer />
       </div>
     </>
   );
 };
+
 
 function LayoutWrapper({ allroutes }) {
   return (
