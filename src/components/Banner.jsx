@@ -23,7 +23,7 @@ function Banner({ send_language }) {
     { name: "Syntax", set: "syntax" },
     { name: "Output", set: "output" },
     { name: "Comments", set: "comments" },
-    { name: "Variables", set: "variables" },
+    { name: "Variables", set: "variables" }
   ];
 
   return (
