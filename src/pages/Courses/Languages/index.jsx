@@ -19,15 +19,15 @@ const Languages = () => {
     { 
     title: "C++",
     img: "https://media.istockphoto.com/id/1419479750/vector/abstract-orange-and-red-gradient-geometric-shape-circle-background-modern-futuristic.jpg?s=612x612&w=0&k=20&c=lsgkc_BO1sL7ZmJOxr_LN8_hLQPa5Fh6w_1EXsISZYA=" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "HTML basic structures and tags",
+    description: "Beginners concepts in C++", 
+    overlayText: "A Beginner's Course in C++",
     },
     
     { 
       title: "C#",
       img: "https://static.vecteezy.com/system/resources/thumbnails/022/217/276/small/banner-background-colorful-bright-orange-gradation-wave-effect-vector.jpg" , 
-      description: "HTML structures web pages with essential elements. Start here to build web content.", 
-      overlayText: "Intermediate Concepts in HTML",
+      description: "Beginners concepts in C#", 
+      overlayText: "A Beginner's Course in C#",
     },
 
   //   {title: "Godot  (GD Script)",
@@ -51,8 +51,8 @@ const Languages = () => {
     { 
       title: "Rust",
       img: "https://www.publicdomainpictures.net/pictures/390000/nahled/abstrakt-banner-hintergrund-rot.jpg" , 
-      description: "HTML structures web pages with essential elements. Start here to build web content.", 
-      overlayText: "Intermediate Concepts in HTML",
+      description: "Rust structures with essential elements. Start here to build in Rust.", 
+      overlayText: "A Beginner's Course in Rust",
     },
     // { 
     //   title: "GoLang",
@@ -65,34 +65,34 @@ const Languages = () => {
     {
       title: "JavaScript",
     img: "https://as2.ftcdn.net/v2/jpg/03/29/47/95/1000_F_329479537_ZYwx3KzKAHdMxzy7XwBgHpEbP3X7UnHt.jpg" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in HTML"
+    description: "Javascript structures, with essential elements. Start here to build web content.", 
+    overlayText: "Beginner's Concepts in Javascript"
   }, 
   {
     title: "Java",
   img: "https://t3.ftcdn.net/jpg/05/23/16/50/360_F_523165015_dveIG8642m9Ue79gPgm01Lrc4hiukHQ5.jpg" , 
-  description: "HTML structures web pages with essential elements. Start here to build web content.", 
-  overlayText: "Advanced Concepts in Java"
+  description: "Java structures with essential elements.", 
+  overlayText: "Beginner's Concepts in Java"
 },
 {
   title: "TypeScript",
 img: "https://as1.ftcdn.net/v2/jpg/03/02/82/72/1000_F_302827252_65eDX6NrRofbFgIraWjq4bq4r4Y8HMeE.jpg" , 
-description: "HTML structures web pages with essential elements. Start here to build web content.", 
-overlayText: "Advanced Concepts in TS"
+description: "Typescript structures with essential elements.", 
+overlayText: "Beginner's Concepts in TS"
 }
   ,
   { 
     title: "C++",
     img: "https://media.istockphoto.com/id/1419479750/vector/abstract-orange-and-red-gradient-geometric-shape-circle-background-modern-futuristic.jpg?s=612x612&w=0&k=20&c=lsgkc_BO1sL7ZmJOxr_LN8_hLQPa5Fh6w_1EXsISZYA=" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "HTML basic structures and tags",
+    description: "Beginners concepts in C++", 
+    overlayText: "A Beginner's Course in C++",
     },
     
-    { 
+   { 
       title: "C#",
       img: "https://static.vecteezy.com/system/resources/thumbnails/022/217/276/small/banner-background-colorful-bright-orange-gradation-wave-effect-vector.jpg" , 
-      description: "HTML structures web pages with essential elements. Start here to build web content.", 
-      overlayText: "Intermediate Concepts in HTML",
+      description: "Beginners concepts in C#", 
+      overlayText: "A Beginner's Course in C#",
     },
     
    
@@ -103,14 +103,14 @@ overlayText: "Advanced Concepts in TS"
     {
       title: "JavaScript",
     img: "https://as2.ftcdn.net/v2/jpg/05/25/23/67/1000_F_525236770_TGLxvQPcXP1CeuPKYHHzBMrfSfLBFRiC.jpg" , 
-    description: "HTML structures web pages with essential elements. Start here to build web content.", 
-    overlayText: "Advanced Concepts in JS"
+    description: "Javacript structures  with essential elements.", 
+    overlayText: "Beginner's Concepts in JS"
   }, 
   {
     title: "TypeScript",
   img: "https://as1.ftcdn.net/v2/jpg/03/02/82/72/1000_F_302827252_65eDX6NrRofbFgIraWjq4bq4r4Y8HMeE.jpg" , 
-  description: "HTML structures web pages with essential elements. Start here to build web content.", 
-  overlayText: "Advanced Concepts in TS"
+  description: "Typescript structures with essential elements", 
+  overlayText: "Beginner's Concepts in TS"
   }
   ,
     
